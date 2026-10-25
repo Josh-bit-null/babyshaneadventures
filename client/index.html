@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#ffb7c5" />
+    <meta name="description" content="BabyShaneAdventures — a cozy 3D co-op study world where focus grows a garden and coins build a home." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="BabyShane" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>BabyShaneAdventures</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="preload" href="/fonts/baloo2.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      html, body { margin: 0; height: 100%; background: #ffe9ef; }
+      #root { height: 100%; }
+      #boot {
+        position: fixed; inset: 0; display: grid; place-items: center; gap: 18px;
+        background: radial-gradient(120% 90% at 50% 0%, #ffe4ec 0%, #ffd6e2 45%, #f9c6d8 100%);
+        font-family: system-ui, sans-serif; color: #6b4250;
+      }
+      #boot .bun { font-size: 46px; animation: bob 1.4s ease-in-out infinite; }
+      #boot p { letter-spacing: .14em; font-size: 11px; text-transform: uppercase; opacity: .65; margin: 0; }
+      @keyframes bob { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-9px) rotate(4deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div class="bun">🍄</div>
+        <p>Waking up the island…</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
